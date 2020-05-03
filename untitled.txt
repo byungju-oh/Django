@@ -1,0 +1,8 @@
+프로젝트 생성
+django-admin startproject 프로젝트이름 .(. 찍으면 현재 디렉토리에 생성)
+ 어플리케이션
+ manage.py startapp 이름
+ 기본 db생성
+ manage.py migrate
+ 서버 실행
+ manage.py runserver
