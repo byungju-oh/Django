@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from polls import views
-
+#mysite/urls 와 polls/urls 로 나눠서 설정할수도있다
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', views.index, name='index'),
     path('polls/<int:question_id>/',views.detail,name='detail'),
     path('polls/<int:question_id>/results/',views.result,name='results'),
     path('polls/<int:question_id>/vote/',views.vote,name='vote'),
+
+    #나누기
+    #path('polls/',include('polls.urls'))
 ]
