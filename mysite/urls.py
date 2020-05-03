@@ -24,6 +24,6 @@ urlpatterns = [
     path('polls/<int:question_id>/results/',views.result,name='results'),
     path('polls/<int:question_id>/vote/',views.vote,name='vote'),
 
-    #나누기
+    #나누기 수정이 더좋다 확장도 좋아 더 좋은거다
     #path('polls/',include('polls.urls'))
 ]
